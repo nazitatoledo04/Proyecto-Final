@@ -281,18 +281,6 @@ footer ul a {
 .footer_container {
     grid-area: footer_container;
 }
-
-input {
-    width: 20px;
-    height: 30px;
-    transition: all 2s;
-}
-
-input:hover {
-    width: 200px;
-    font-size: 24px;
-}
-
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     .container {
@@ -1242,4 +1230,14 @@ input:hover {
     .footer_container {
         grid-area: footer_container;
     }
+}
+input {
+    width: 20px;
+    height: 30px;
+    transition: all 2s;
+}
+
+input:hover {
+    width: 200px;
+    font-size: 24px;
 }
