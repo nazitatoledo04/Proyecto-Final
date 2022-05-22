@@ -39,7 +39,9 @@ nav ul a {
 nav li:hover {
     background-color: rgb(240, 113, 10);
 }
-
+nav ul i .bibi bi-cart {
+ color: wheat;
+}
 .imag_container {
     grid-area: imag_container;
 }
