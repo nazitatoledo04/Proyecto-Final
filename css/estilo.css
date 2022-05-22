@@ -47,7 +47,16 @@ nav li:hover {
 .img_container {
     grid-area: img_container;
 }
-
+div a {
+    display: block;
+    padding: 20px;
+    text-align: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
 .main_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -281,8 +290,28 @@ footer ul a {
 .footer_container {
     grid-area: footer_container;
 }
+input {
+    width: 20px;
+    height: 30px;
+    transition: all 2s;
+}
+
+input:hover {
+    width: 200px;
+    font-size: 24px;
+}
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+    input {
+        width: 20px;
+        height: 30px;
+        transition: all 2s;
+    }
+    
+    input:hover {
+        width: 200px;
+        font-size: 24px;
+    }
     .container {
         display: grid;
         grid-template-columns: 0.4fr 0.1fr 2.5fr;
@@ -295,7 +324,16 @@ footer ul a {
             "img_container . main_container"
             "footer_container footer_container footer_container";
     }
-
+    div a {
+        display: block;
+        padding: 20px;
+        text-align: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
     .header_container {
         grid-area: header_container;
     }
@@ -403,6 +441,16 @@ footer ul a {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+    input {
+        width: 20px;
+        height: 30px;
+        transition: all 2s;
+    }
+    
+    input:hover {
+        width: 200px;
+        font-size: 24px;
+    }
     .container {
         display: grid;
         grid-template-columns: 0.4fr 0.1fr 2.5fr;
@@ -415,7 +463,16 @@ footer ul a {
             "img_container . main_container"
             "footer_container footer_container footer_container";
     }
-
+    div a {
+        display: block;
+        padding: 20px;
+        text-align: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
     .header_container {
         grid-area: header_container;
     }
@@ -547,6 +604,16 @@ footer ul a {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+    input {
+        width: 20px;
+        height: 30px;
+        transition: all 2s;
+    }
+    
+    input:hover {
+        width: 200px;
+        font-size: 24px;
+    }
     .container {
         display: grid;
         grid-template-columns: 0.4fr 0.1fr 3.2fr 0.4fr;
@@ -559,7 +626,16 @@ footer ul a {
             "img_container . main_container ."
             "footer_container footer_container footer_container footer_container";
     }
-
+    div a {
+        display: block;
+        padding: 20px;
+        text-align: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
     .header_container {
         grid-area: header_container;
     }
@@ -775,7 +851,16 @@ footer ul a {
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+    input {
+        width: 20px;
+        height: 30px;
+        transition: all 2s;
+    }
+    
+    input:hover {
+        width: 200px;
+        font-size: 24px;
+    }
     .container {
         display: grid;
         grid-template-columns: 0.4fr 0.1fr 3.2fr 0.4fr;
@@ -788,7 +873,16 @@ footer ul a {
             "img_container . main_container ."
             "footer_container footer_container footer_container footer_container";
     }
-
+    div a {
+        display: block;
+        padding: 20px;
+        text-align: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
     .header_container {
         grid-area: header_container;
     }
@@ -1005,7 +1099,16 @@ footer ul a {
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-
+    input {
+        width: 20px;
+        height: 30px;
+        transition: all 2s;
+    }
+    
+    input:hover {
+        width: 200px;
+        font-size: 24px;
+    }
     .container {
         display: grid;
         grid-template-columns: 0.4fr 0.1fr 3.2fr 0.4fr;
@@ -1018,7 +1121,16 @@ footer ul a {
             "img_container . main_container ."
             "footer_container footer_container footer_container footer_container";
     }
-
+    div a {
+        display: block;
+        padding: 20px;
+        text-align: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
     .header_container {
         grid-area: header_container;
     }
@@ -1230,14 +1342,4 @@ footer ul a {
     .footer_container {
         grid-area: footer_container;
     }
-}
-input {
-    width: 20px;
-    height: 30px;
-    transition: all 2s;
-}
-
-input:hover {
-    width: 200px;
-    font-size: 24px;
 }
