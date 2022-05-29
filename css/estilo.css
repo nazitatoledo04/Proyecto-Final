@@ -54,12 +54,7 @@ ul {
     padding: 10px;
     background-color: lightgray;
   }
-  div {
-    width: 100px;
-    height: 100px;
-    background-color: lightblue;
-    border: solid 1px;
-  }
+
   .Barva {
     justify-content: center;
   }
