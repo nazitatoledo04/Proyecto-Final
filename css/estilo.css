@@ -24,7 +24,7 @@ ul {
     text-decoration: none;
     text-transform: uppercase;
     font-family: Arial;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   
   ul ul {
