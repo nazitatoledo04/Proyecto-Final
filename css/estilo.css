@@ -46,16 +46,20 @@ ul {
     display: block;
   }
   
+  .space-evenly {
+    justify-content: space-evenly;
+  }
   section {
     display: flex;
     padding: 10px;
     background-color: lightgray;
   }
-  
-  .space-around {
-    justify-content: space-around;
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: solid 1px;
   }
-  
   .Barva {
     justify-content: center;
   }
