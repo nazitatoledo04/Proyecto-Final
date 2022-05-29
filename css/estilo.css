@@ -1,3 +1,6 @@
+body{
+    background-color: aqua;
+}
 ul {
     background-color: rgb(8, 3, 78);
     list-style: none;
@@ -45,7 +48,12 @@ ul {
   ul li:hover ul {
     display: block;
   }
-  
+  .col-lg-4{
+      text-align: center;
+  }
+  .center{
+      text-align: center;
+  }
   .space-evenly {
     justify-content: space-evenly;
   }
@@ -58,22 +66,22 @@ ul {
   .Barva {
     justify-content: center;
   }
+  h3{
+      text-align: center;
+  }
   footer {
-    display: block;
-    list-style: none;
+    background-color: rgb(73, 73, 73);
+    color: rgb(255, 255, 255);
+    
   }
   footer ul {
-    text-align: center;
-    color: white;
-    list-style: none;
-    display: block;
-    display: flex;
-  }
-  footer ul li a {
-    flex-grow: 1;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
+      text-align: center;
+}
+  .space-around {
+      padding: 30px;
+      list-style: none;
+      text-align: center:
+    justify-content: space-around;
   }
   /*phones*/
   @media (max-width: 600px) {
