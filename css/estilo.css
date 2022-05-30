@@ -94,7 +94,7 @@ ul {
     justify-content: space-around;
   }
   /*phones*/
-  @media (max-width: 600px) {
+  @media (max-width: 675px) {
     nav {
       display: flex;
       justify-content: center;
@@ -105,13 +105,18 @@ ul {
       display: flex;
       flex-direction: column;
     }
-  
-  
+    .space-around {
+      background-color: black;
+      justify-content: space-around;
+    }
+    .vertical {
+      flex-direction: column;
+    }
     nav {
       display: block;
     }
   }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 999px) {
     nav ul {
       list-style: none;
       display: flex;
@@ -135,13 +140,16 @@ ul {
       margin-inline-end: 0px;
       padding-inline-start: 40px;
     }
-
+    .space-around {
+      background-color: black;
+      justify-content: space-around;
+    }
 
   }
   
 
   /*desktops*/
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     ul {
       background-color: rgb(8, 3, 78);
       list-style: none;
@@ -187,13 +195,11 @@ ul {
       display: block;
     }
 
-    section {
-      display: flex;
-      padding: 10px;
-      background-color: lightgray;
-    }
+    
+   
 
     .space-around {
+      background-color: black;
       justify-content: space-around;
     }
   }
