@@ -1,0 +1,240 @@
+:root {
+  --titulos: blue;
+  --subtitulos: red;
+  --borde: 2px solid red;
+}
+
+body {
+  background-color: aqua;
+}
+
+ul {
+  background-color: rgb(8, 3, 78);
+  list-style: none;
+  padding: 0;
+}
+
+nav>ul {
+  display: flex;
+}
+
+nav>ul>li {
+  flex-grow: 1;
+  position: relative;
+
+}
+
+nav ul a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial;
+  color: rgb(255, 255, 255);
+}
+
+ul ul {
+  position: absolute;
+  background-color: rgb(231, 155, 14);
+  width: 100%;
+  display: none;
+}
+
+.center {
+  display: flex;
+  display: block;
+}
+
+ul ul li {
+  background-color: rgb(70, 70, 70);
+}
+
+nav li:hover {
+  background-color: rgb(240, 123, 13);
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+.col-lg-4 {
+  text-align: center;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+section {
+  display: flex;
+  padding: 10px;
+  color: #000;
+}
+
+.white {
+  color: white;
+}
+
+div .white img {
+  align-items: center;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.vertical {
+  background-color: black;
+}
+
+h3 {
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(246, 16, 16);
+  color: rgb(255, 253, 253);
+
+}
+
+footer ul {
+  text-align: center;
+}
+
+.space-around {
+  padding: 30px;
+  list-style: none;
+  text-align: center: justify-content: space-around;
+}
+
+/*phones*/
+@media (max-width: 675px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .space-around {
+    background-color: black;
+    justify-content: space-around;
+  }
+
+  .vertical {
+    flex-direction: column;
+  }
+
+  nav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: white;
+  }
+
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+
+  .space-around {
+    background-color: black;
+    justify-content: space-around;
+  }
+
+}
+
+
+/*desktops*/
+@media (min-width: 1000px) {
+  ul {
+    background-color: rgb(8, 3, 78);
+    list-style: none;
+    padding: 0;
+  }
+
+  nav>ul {
+    display: flex;
+  }
+
+  nav>ul>li {
+    flex-grow: 1;
+    position: relative;
+
+  }
+
+  nav ul a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: white;
+  }
+
+  ul ul {
+    position: absolute;
+    background-color: rgb(231, 155, 14);
+    width: 100%;
+    display: none;
+  }
+
+  ul ul li {
+    background-color: rgb(70, 70, 70);
+  }
+
+  nav li:hover {
+    background-color: rgb(240, 123, 13);
+  }
+
+  ul li:hover ul {
+    display: block;
+  }
+
+
+
+
+  .space-around {
+    background-color: black;
+    justify-content: space-around;
+  }
+}
+
+//main.css
+/* base */
+@import "base/reset";
+@import "base/typography";
+
+/* componentes */
+@import "components/buttons";
+@import "components/div";
+@import "components/drupdown";
