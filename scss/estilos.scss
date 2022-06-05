@@ -21,7 +21,7 @@ ul {
     }
   }
   
-}
+
 
 nav>ul {
   display: flex;
@@ -116,7 +116,8 @@ footer {
 .space-around {
   padding: 30px;
   list-style: none;
-  text-align: center: justify-content: space-around;
+  text-align: center;
+   justify-content: space-around;
 }
 
 body {
@@ -185,7 +186,7 @@ body {
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-Show All Properties (17 more)
+
 }
 *, ::after, ::before {
   box-sizing: border-box;

@@ -58,6 +58,12 @@ p {
   .center{
       text-align: center;
   }
+  .end {
+    text-align: end;
+    list-style: none;
+    text-decoration: none
+    
+  }
   .space-evenly {
     justify-content: space-evenly;
   }
@@ -90,10 +96,11 @@ p {
       text-align: center;
 }
   .space-around {
+     justify-content: space-around;
       padding: 30px;
       list-style: none;
-      text-align: center:
-    justify-content: space-around;
+      text-align: center;
+   
   }
   /*Contactos*/
   .centrado {
