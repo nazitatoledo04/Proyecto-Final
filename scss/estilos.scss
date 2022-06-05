@@ -12,60 +12,67 @@ ul {
   background-color: rgb(8, 3, 78);
   list-style: none;
   padding: 0;
+    position: absolute;
+    background-color: rgb(231, 155, 14);
+    width: 100%;
+    display: none;
+    li {
+      background-color: rgb(70, 70, 70);
+    }
+  }
+  
 }
 
 nav>ul {
   display: flex;
+  li {
+    flex-grow: 1;
+    position: relative;
+  
+  }
+  a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+  }
+  li:hover {
+    background-color: rgb(240, 123, 13);
+  }
+  ul {
+    display: block;
+  }
 }
 
-nav>ul>li {
-  flex-grow: 1;
-  position: relative;
 
-}
 
-nav ul a {
-  display: block;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: Arial;
-  color: rgb(255, 255, 255);
-}
 
-ul ul {
-  position: absolute;
-  background-color: rgb(231, 155, 14);
-  width: 100%;
-  display: none;
-}
+
+
 
 .center {
   display: flex;
   display: block;
+  
+    text-align: center;
+  
 }
 
-ul ul li {
-  background-color: rgb(70, 70, 70);
-}
 
-nav li:hover {
-  background-color: rgb(240, 123, 13);
-}
 
-ul li:hover ul {
-  display: block;
-}
+
+
+
 
 .col-lg-4 {
   text-align: center;
 }
 
 
-.center {
-  text-align: center;
-}
+
 
 .space-evenly {
   justify-content: space-evenly;
@@ -100,12 +107,11 @@ h3 {
 footer {
   background-color: rgb(246, 16, 16);
   color: rgb(255, 253, 253);
-
+  ul {
+    text-align: center;
+  }
 }
 
-footer ul {
-  text-align: center;
-}
 
 .space-around {
   padding: 30px;
@@ -116,14 +122,14 @@ footer ul {
 /*phones*/
 @media (max-width: 675px) {
   nav {
+    display: block;
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .space-around {
@@ -135,9 +141,6 @@ footer ul {
     flex-direction: column;
   }
 
-  nav {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 999px) {
@@ -146,14 +149,15 @@ footer ul {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: Arial;
+      color: white;
+    }
   }
 
-  nav ul a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: Arial;
-    color: white;
-  }
+  
 
   ul {
     display: block;
@@ -183,45 +187,41 @@ footer ul {
 
   nav>ul {
     display: flex;
+    li {
+      flex-grow: 1;
+      position: relative;
+  
+    }
+    a {
+      display: block;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: Arial;
+      color: white;
+    }
+    li:hover {
+      background-color: rgb(240, 123, 13);
+    }
   }
 
-  nav>ul>li {
-    flex-grow: 1;
-    position: relative;
+  
 
-  }
 
-  nav ul a {
-    display: block;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: Arial;
-    color: white;
-  }
 
   ul ul {
     position: absolute;
     background-color: rgb(231, 155, 14);
     width: 100%;
     display: none;
+    li {
+      background-color: rgb(70, 70, 70);
+    }
+    li:hover ul {
+      display: block;
+    }
   }
-
-  ul ul li {
-    background-color: rgb(70, 70, 70);
-  }
-
-  nav li:hover {
-    background-color: rgb(240, 123, 13);
-  }
-
-  ul li:hover ul {
-    display: block;
-  }
-
-
-
 
   .space-around {
     background-color: black;
