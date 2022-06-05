@@ -122,7 +122,7 @@ p {
     border-radius: 5px;  
     border-style: solid; 
     border-width: 1px; 
-    border-color: #ab4493; 
+    border-color: #f60303; 
     margin-top: 10px;  
     padding-left: 10px;
     margin-bottom: 20px; 
@@ -136,7 +136,7 @@ p {
     border-radius: 5px;  
     border-style: solid; 
     border-width: 1px; 
-    border-color: #ab4493; 
+    border-color: #f20000; 
     margin-top: 10px;  
     padding-left: 10px;
     margin-bottom: 20px; 
@@ -157,8 +157,8 @@ p {
     margin-bottom: 20px; 
     margin-top: 10px;   
     text-transform: uppercase;
-    background-color: #ab4493; 
-    border-color: #ab4493; 
+    background-color: #01043f; 
+    border-color: #fa9703; 
     border-style: solid; 
     border-radius: 10px;  
     width: 420px;   
@@ -181,27 +181,10 @@ p {
     color: #0e0e0e;  
   }
   
-  
-  
-  
-  
-  
-  p{
-    font-size: 14px; 
-    color: #0e0e0e; 
-  }
-  
-  
-  
-  
-  
-
-  
   .formulario input:focus{
     outline:0;
     border: 1px solid #97d848;
   }
-  
   
   .formulario textarea:focus{
     outline:0;
