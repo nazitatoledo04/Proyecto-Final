@@ -199,7 +199,9 @@ p {
       justify-content: center;
       margin-bottom: 100px;
     }
-  
+ .medio {
+    text-align: center;
+  }
     nav ul {
       display: flex;
       flex-direction: column;
