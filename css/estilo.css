@@ -94,7 +94,7 @@ ul {
     justify-content: space-around;
   }
   /*Contactos*/
-  .center {
+  .centrado {
     display: flex;
     flex-direction: column;
     align-items: center;
