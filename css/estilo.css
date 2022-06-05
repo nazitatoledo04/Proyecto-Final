@@ -1,22 +1,292 @@
-body{
-    background-color: rgb(20, 230, 230);
+body {
+  background-color: rgb(20, 230, 230);
 }
+
 ul {
-    background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  list-style: none;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav>ul>li {
+  flex-grow: 1;
+  position: relative;
+}
+
+nav ul a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial;
+  color: rgb(255, 255, 255);
+}
+
+ul ul {
+  position: absolute;
+  background-color: rgb(231, 155, 14);
+  width: 100%;
+  display: none;
+}
+
+.center {
+  display: flex;
+  display: block;
+}
+
+ul ul li {
+  background-color: rgb(70, 70, 70);
+}
+
+nav li:hover {
+  background-color: rgb(240, 123, 13);
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+.col-lg-4 {
+  text-align: center;
+}
+
+p {
+  padding: 3px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.end {
+  text-align: end;
+  list-style: none;
+  text-decoration: none
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+section {
+  display: flex;
+  padding: 10px;
+  color: #000;
+}
+
+.white {
+  color: rgb(253, 253, 253);
+}
+
+div .white img {
+  align-items: center;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.vertical {
+  background-color: black;
+}
+
+h3 {
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(224, 14, 14);
+
+}
+
+footer ul {
+  text-align: center;
+}
+
+.space-around {
+  justify-content: space-around;
+  padding: 30px;
+  list-style: none;
+  text-align: center;
+
+}
+
+/*Contactos*/
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f60303;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f20000;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #01043f;
+  border-color: #fa9703;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+
+button p {
+  color: #fff;
+}
+
+
+span {
+  color: #ab4493;
+}
+
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.row {
+  padding: 3px;
+}
+
+/*phones*/
+@media (max-width: 675px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .medio {
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .space-around {
+    background-color: black;
+    justify-content: space-around;
+  }
+
+  .vertical {
+    flex-direction: column;
+  }
+
+  nav {
+    display: block;
+  }
+}
+
+/*tablet*/
+@media screen and (max-width: 999px) {
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+  }
+
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+
+  .space-around {
+    background-color: black;
+    justify-content: space-around;
+  }
+}
+
+/*desktops*/
+@media (min-width: 1000px) {
+  ul {
+    background-color: rgb(8, 3, 78);
     list-style: none;
     padding: 0;
   }
-  
+
   nav>ul {
     display: flex;
   }
-  
+
   nav>ul>li {
     flex-grow: 1;
     position: relative;
-  
   }
-  
+
   nav ul a {
     display: block;
     padding: 20px;
@@ -24,283 +294,34 @@ ul {
     text-decoration: none;
     text-transform: uppercase;
     font-family: Arial;
-    color: rgb(255, 255, 255);
+    color: white;
   }
-  
+
   ul ul {
     position: absolute;
     background-color: rgb(231, 155, 14);
     width: 100%;
     display: none;
   }
-  .center{
-    display: flex;
-    display: block;
-  }
+
   ul ul li {
     background-color: rgb(70, 70, 70);
   }
-  
+
   nav li:hover {
     background-color: rgb(240, 123, 13);
   }
-  
+
   ul li:hover ul {
     display: block;
   }
-  .col-lg-4{
-      text-align: center;
+
+  .row {
+    padding: 3px;
   }
-p {
-  padding: 3px;
-  text-align: center;
-}
-  .center{
-      text-align: center;
-  }
-  .end {
-    text-align: end;
-    list-style: none;
-    text-decoration: none
-    
-  }
-  .space-evenly {
-    justify-content: space-evenly;
-  }
-  section  {
-    display: flex;
-    padding: 10px;
-    color: #000;
-  }
-  .white{
-    color: rgb(253, 253, 253);
-  }
-  div .white img {
-    align-items: center;
-  }
+
   .space-around {
+    background-color: black;
     justify-content: space-around;
   }
-  .vertical {
-    background-color: black;
-  }
-  h3{
-      text-align: center;
-  }
-  footer {
-    background-color: rgb(0, 0, 0);
-    color: rgb(224, 14, 14);
-    
-  }
-  footer ul {
-      text-align: center;
 }
-  .space-around {
-     justify-content: space-around;
-      padding: 30px;
-      list-style: none;
-      text-align: center;
-   
-  }
-  /*Contactos*/
-  .contact_form{  
-    width: 460px; 
-    height: auto;
-    margin: 80px auto;
-    border-radius: 10px;  
-    padding-top: 30px;
-    padding-bottom: 20px;  
-    background-color: #fbfbfb; 
-    padding-left: 30px; 
-  }
-  
-  
-  input{
-    background-color: #fbfbfb; 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #f60303; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-  }
-  
-  
-  textarea{
-    background-color: #fbfbfb; 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #f20000; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-  }
-  
-  
-  label{
-    display: block; 
-    float: center;  
-  }
-  
-  
-  button{
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    background-color: #01043f; 
-    border-color: #fa9703; 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
-  }
-  
-  
-  button p{
-    color: #fff; 
-  }
-  
-  
-  span{
-    color: #ab4493; 
-  }
-  
-  
-  .aviso{
-    font-size: 13px;  
-    color: #0e0e0e;  
-  }
-  
-  .formulario input:focus{
-    outline:0;
-    border: 1px solid #97d848;
-  }
-  
-  .formulario textarea:focus{
-    outline:0;
-    border: 1px solid #97d848;
-  }
-
-
-  /*phones*/
-  @media (max-width: 675px) {
-    nav {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 100px;
-    }
- .medio {
-    text-align: center;
-  }
-    nav ul {
-      display: flex;
-      flex-direction: column;
-    }
-    .space-around {
-      background-color: black;
-      justify-content: space-around;
-    }
-    .vertical {
-      flex-direction: column;
-    }
-    nav {
-      display: block;
-    }
-  }
-  @media screen and (max-width: 999px) {
-    nav ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      margin-top: 40px;
-    }
-
-    nav ul a {
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: Arial;
-      color: rgb(255, 255, 255);
-    }
-
-    ul {
-      display: block;
-      list-style-type: disc;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      padding-inline-start: 40px;
-    }
-    .space-around {
-      background-color: black;
-      justify-content: space-around;
-    }
-
-  }
-  
-
-  /*desktops*/
-  @media (min-width: 1000px) {
-    ul {
-      background-color: rgb(8, 3, 78);
-      list-style: none;
-      padding: 0;
-    }
-
-    nav>ul {
-      display: flex;
-    }
-
-    nav>ul>li {
-      flex-grow: 1;
-      position: relative;
-
-    }
-
-    nav ul a {
-      display: block;
-      padding: 20px;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: Arial;
-      color: white;
-    }
-
-    ul ul {
-      position: absolute;
-      background-color: rgb(231, 155, 14);
-      width: 100%;
-      display: none;
-    }
-
-    ul ul li {
-      background-color: rgb(70, 70, 70);
-    }
-
-    nav li:hover {
-      background-color: rgb(240, 123, 13);
-    }
-
-    ul li:hover ul {
-      display: block;
-    }
-
-    
-   
-
-    .space-around {
-      background-color: black;
-      justify-content: space-around;
-    }
-  }
