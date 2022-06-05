@@ -1,8 +1,8 @@
 body{
-    background-color: aqua;
+    background-color: rgb(20, 230, 230);
 }
 ul {
-    background-color: rgb(8, 3, 78);
+    background-color: rgb(0, 0, 0);
     list-style: none;
     padding: 0;
   }
@@ -65,7 +65,7 @@ ul {
     color: #000;
   }
   .white{
-    color: white;
+    color: rgb(253, 253, 253);
   }
   div .white img {
     align-items: center;
@@ -80,8 +80,8 @@ ul {
       text-align: center;
   }
   footer {
-    background-color: rgb(246, 16, 16);
-    color: rgb(255, 253, 253);
+    background-color: rgb(0, 0, 0);
+    color: rgb(224, 14, 14);
     
   }
   footer ul {
@@ -93,6 +93,28 @@ ul {
       text-align: center:
     justify-content: space-around;
   }
+  /*Contactos*/
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: block;
+}
+
+
   /*phones*/
   @media (max-width: 675px) {
     nav {
@@ -128,7 +150,7 @@ ul {
       text-decoration: none;
       text-transform: uppercase;
       font-family: Arial;
-      color: white;
+      color: rgb(255, 255, 255);
     }
 
     ul {
