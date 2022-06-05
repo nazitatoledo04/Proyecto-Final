@@ -61,33 +61,60 @@
       <section class="centrado">
 
 
-        <form id="contacto">
-          <h1>Contacto</h1>
-          <fieldset>
-            <label for="nombre">Nombre:</label>
-            <input class="campo" type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
-            <br><br>
-            <label for="apellido">Apellido:</label>
-            <input class="campo" type="text" id="apellido" name="apellido" placeholder="Ingresá tu apellido" required>
-            <br><br>
-            <label for="email">Email:</label>
-            <input class="campo" type="email" id="email" name="email" placeholder="Ingresá tu email" required>
-            <br><br>
+         
+  <!-- formulario de contacto en html y css -->  
 
-            <label id="edad">Prenda:</label>
-            <select placeholder="seleccioná de prenda">
-              <option>Zapatillas</option>
-              <option>Ropa</option>
-              <option>Accesorios</option>
-            </select>
-            <br><br>
-            <label for="email">Comentario:</label> <br>
-            <textarea type="text-area" placeholder="Escribí tu consulta aquí" value=""></textarea>
-            <br><br>
-            <button class="btn btn-primary" type="submit" value="Enviar">Enviar</button>
+  <div class="contact_form">
 
-          </fieldset>
-        </form>
+    <div class="formulario">      
+      <h1>Contacto</h1>
+        <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Apellido
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu apellido">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">E-mail
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu email">
+                </p>    
+            
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Comentario
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Mandar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
 
       </section>
       <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
