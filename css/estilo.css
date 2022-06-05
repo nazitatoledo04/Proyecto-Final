@@ -55,11 +55,14 @@ ul li:hover ul {
   text-align: center;
 }
 
-p {
+h3 p {
   padding: 3px;
   text-align: center;
 }
-
+div p {
+  padding: 3px;
+  text-align: center;
+}
 .center {
   text-align: center;
 }
