@@ -51,8 +51,10 @@ ul {
   .col-lg-4{
       text-align: center;
   }
-
-
+p{
+  padding: 5px;
+  text-align: center;
+}
   .center{
       text-align: center;
   }
