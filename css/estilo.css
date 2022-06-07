@@ -210,6 +210,48 @@ span {
   padding: 3px;
 }
 
+/*Animaciones*/
+.chicle:hover{
+  animation: chicle 1s 1;
+}
+@keyframes chicle{
+  30% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+  50% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }  
+}
+.click:hover{
+  animation: click 0.5s 1;
+}
+@keyframes click{
+  25%,75%{
+    transform: scale(0.8)
+  }
+  50%{
+    transform: scale(1.1)
+  }
+}
+.rebote-in:hover{
+  animation: rebote-in 1s 2;
+}
+@keyframes rebote-in{
+  0%{
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50%{ 
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  70%{
+    transform: scale(0.9)
+  }  
+}
 /*phones*/
 @media (max-width: 675px) {
   nav {
@@ -328,3 +370,4 @@ span {
     justify-content: space-around;
   }
 }
+
