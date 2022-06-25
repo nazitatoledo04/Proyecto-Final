@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(20, 230, 230);
+  background-color: rgb(255, 255, 255);
 }
 
 ul {
@@ -111,6 +111,14 @@ footer {
 
 footer ul {
   text-align: center;
+}
+
+footer ul li {
+padding: 2px;
+}
+
+footer ul li a {
+  color: white;
 }
 
 .space-around {
@@ -236,8 +244,8 @@ span {
     transform: scale(1.1)
   }
 }
-/*phones*/
-@media (max-width: 675px) {
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
   nav {
     display: flex;
     justify-content: center;
@@ -274,10 +282,10 @@ span {
   nav {
     display: block;
   }
-}
+ }
 
-/*tablet*/
-@media screen and (max-width: 999px) {
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) { 
   nav ul {
     list-style: none;
     display: flex;
@@ -308,11 +316,10 @@ span {
     background-color: black;
     justify-content: space-around;
   }
-}
+ }
 
-/*desktops*/
-@media (min-width: 1000px) {
- 
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) { 
   nav>ul {
     display: flex;
   }
@@ -340,5 +347,67 @@ span {
     background-color: black;
     justify-content: space-around;
   }
-}
+ }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) { 
+  nav>ul {
+    display: flex;
+  }
+
+  nav>ul>li {
+    flex-grow: 1;
+    position: relative;
+  }
+
+  ul ul li {
+    background-color: rgb(70, 70, 70);
+  }
+
+  
+
+  ul li:hover ul {
+    display: block;
+  }
+
+  .row {
+    padding: 3px;
+  }
+
+  .space-around {
+    background-color: black;
+    justify-content: space-around;
+  }
+ }
+
+/*XX-Large devices (larger desktops, 1400px and up)*/ 
+@media (max-width: 1400px) {
+  nav>ul {
+    display: flex;
+  }
+
+  nav>ul>li {
+    flex-grow: 1;
+    position: relative;
+  }
+
+  ul ul li {
+    background-color: rgb(70, 70, 70);
+  }
+
+  
+
+  ul li:hover ul {
+    display: block;
+  }
+
+  .row {
+    padding: 3px;
+  }
+
+  .space-around {
+    background-color: black;
+    justify-content: space-around;
+  }
+ }
 
