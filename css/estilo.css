@@ -55,8 +55,8 @@ ul li:hover ul {
   text-align: center;
 }
 
-h3 p {
-  padding: 3px;
+div h3 p {
+  padding: 50px;
   text-align: center;
 }
 
@@ -285,7 +285,7 @@ span {
 }
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 576px) {
+@media (max-width: 676px) {
   nav {
     display: flex;
     justify-content: center;
@@ -360,7 +360,7 @@ span {
 }
 
 /* Large devices (desktops, 992px and up)*/
-@media (max-width: 992px) {
+@media (max-width: 792px) {
   nav>ul {
     display: flex;
   }
