@@ -59,10 +59,12 @@ h3 p {
   padding: 3px;
   text-align: center;
 }
+
 div p {
   padding: 3px;
   text-align: center;
 }
+
 .center {
   text-align: center;
 }
@@ -114,7 +116,7 @@ footer ul {
 }
 
 footer ul li {
-padding: 2px;
+  padding: 2px;
 }
 
 footer ul li a {
@@ -219,31 +221,69 @@ span {
 }
 
 /*Animaciones*/
-.chicle:hover{
+.chicle:hover {
   animation: chicle 1s 1;
 }
-@keyframes chicle{
+
+/*tabla*/
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 4px solid #ddd;
+  padding: 10px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #033977;
+  color: white;
+}
+
+@keyframes chicle {
   30% {
     transform: scaleX(1.25) scaleY(0.75);
   }
+
   50% {
     transform: scaleX(0.75) scaleY(1.25);
   }
+
   60% {
     transform: scaleX(1.15) scaleY(0.85);
-  }  
+  }
 }
-.click:hover{
+
+.click:hover {
   animation: click 0.5s 1;
 }
-@keyframes click{
-  25%,75%{
+
+@keyframes click {
+
+  25%,
+  75% {
     transform: scale(0.8)
   }
-  50%{
+
+  50% {
     transform: scale(1.1)
   }
 }
+
 /* Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) {
   nav {
@@ -251,6 +291,7 @@ span {
     justify-content: center;
     margin-bottom: 100px;
   }
+
   nav ul a {
     display: block;
     padding: 20px;
@@ -260,7 +301,7 @@ span {
     font-family: Arial;
     color: white;
   }
- 
+
   .medio {
     text-align: center;
   }
@@ -282,10 +323,10 @@ span {
   nav {
     display: block;
   }
- }
+}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   nav ul {
     list-style: none;
     display: flex;
@@ -311,15 +352,15 @@ span {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
   }
-  
+
   .space-around {
     background-color: black;
     justify-content: space-around;
   }
- }
+}
 
 /* Large devices (desktops, 992px and up)*/
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
   nav>ul {
     display: flex;
   }
@@ -333,7 +374,7 @@ span {
     background-color: rgb(70, 70, 70);
   }
 
-  
+
 
   ul li:hover ul {
     display: block;
@@ -347,10 +388,10 @@ span {
     background-color: black;
     justify-content: space-around;
   }
- }
+}
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
   nav>ul {
     display: flex;
   }
@@ -364,7 +405,7 @@ span {
     background-color: rgb(70, 70, 70);
   }
 
-  
+
 
   ul li:hover ul {
     display: block;
@@ -378,9 +419,9 @@ span {
     background-color: black;
     justify-content: space-around;
   }
- }
+}
 
-/*XX-Large devices (larger desktops, 1400px and up)*/ 
+/*XX-Large devices (larger desktops, 1400px and up)*/
 @media (max-width: 1400px) {
   nav>ul {
     display: flex;
@@ -395,7 +436,7 @@ span {
     background-color: rgb(70, 70, 70);
   }
 
-  
+
 
   ul li:hover ul {
     display: block;
@@ -409,5 +450,4 @@ span {
     background-color: black;
     justify-content: space-around;
   }
- }
-
+}
