@@ -219,7 +219,24 @@ span {
 .row {
   padding: 3px;
 }
+/*leyenda*/
+fieldset {
+  font-family: sans-serif;
+  border: 5px solid #00285a;
+  background: #ddd;
+  border-radius: 5px;
+  padding: 15px;
+}
 
+fieldset legend {
+  background: #00387c;
+  color: #fff;
+  padding: 10px 10px ;
+  font-size: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 5px #ddd;
+  margin-left: 50px;
+}
 /*Animaciones*/
 .chicle:hover {
   animation: chicle 1s 1;
